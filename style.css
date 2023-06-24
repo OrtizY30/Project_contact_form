@@ -1,0 +1,247 @@
+*{
+    margin: 0%;
+    padding: 0px;
+    
+    text-decoration: none;
+
+}
+
+#content{
+    width: 81%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+/*Estilos de la cabecera*/
+
+#header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+
+    margin-top: 12px;
+    font-family: 'Lucida Sans', sans-serif;
+}
+
+#header #logo h1{
+    font-size: 35px;
+    color: #444;
+    
+}
+#header #logo h1:hover{
+    cursor: pointer;
+}
+
+#header #logo h1 span{
+    color: #5DADE2;
+}
+#header #menu{
+    flex-basis: 30% ;
+}
+#header #menu ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    list-style: none;
+}
+
+#header ul li a{
+    color: #444;
+    font-size: 22px;
+    transition: all 300ms;
+}
+#header ul li a:hover{
+    color: #5DADE2;
+    
+}
+
+/*Estilos de la seccion*/
+
+#section {
+    display: flex;
+    align-items: center;
+    
+
+    margin-top: 130px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#section #tarjet h2{
+    display: block;
+    font-size: 35px;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+
+}
+#section #tarjet h2 span{
+    color: #5DADE2;
+}
+
+#section #tarjet p{
+    font-size: 24px;
+}
+
+#section #tarjet #botones{
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    
+}
+
+#section #contactos{
+    background-color:#5DADE2;
+    width: 190px;
+    height: 58px;
+    margin-right: 60px;
+    border-radius: 10px;
+    text-align: center;
+    
+
+
+}
+#section #contactos label{
+    display: block;
+    color: #444;
+    height: 100%;
+    width: 100%;
+    line-height: 53px;
+    font-size: 25px;
+    transition: all 300ms;
+}
+
+
+#section #contactos label:hover{
+    color: white;
+    border: none;
+    box-shadow: inset 0px 0px 6px black;
+    border-radius: 10px;
+    cursor: pointer;
+
+}
+
+#section #conoce a{
+    font-size: 25px;
+    color: black;
+    
+}
+#section #conoce a:hover{
+    color:  #5DADE2;
+}
+
+#section #imagen{
+    
+}
+#section img{
+    width: 700px;
+    
+}
+
+
+/*Estilos del formulario*/
+
+#form{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transform: translateX(-200%);
+    /* opacity: 0;
+    visibility: hidden; */
+    transition: all 1s ease;
+    width: 81%;
+    
+    position: absolute;
+    top: 170px;
+}
+
+#contact{
+    display: flex;
+    flex-direction: column;
+    flex-basis: 50%;
+    
+    background-color: white;
+}
+
+#contact #send{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    color: #5DADE2;
+    margin-bottom: 50px;
+}
+
+#contact #send:hover{
+    cursor: pointer;
+}
+
+#contact input[type="text"]{
+    border: none;
+    background-color: #f8f8f8;
+    box-shadow: -5px 25px 20px #dddde0;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    
+    padding: 15px;
+    margin-bottom: 30px;
+    font-size: 30px;
+    color: #555;
+}
+#contact  textarea{
+    border: none;
+    background-color: #f8f8f8;
+    box-shadow: -5px 25px 20px #dddde0;
+    border-top-left-radius: 20px;
+    font-size: 30px;
+    padding: 20px;
+    height: 240px;
+    margin-bottom: 20px;
+    color: #555;
+}
+
+#contact input[type="text"], textarea:focus{
+    outline: none;
+    
+    
+}
+
+#contact #enviar{
+    height: 55px;
+    border-radius: 10px;
+    background-color: #5DADE2;
+    border: none;
+    font-size: 35px;
+    color: white;
+}
+
+#contact #enviar:hover{
+    cursor: pointer;
+    box-shadow: 0px 0px 6px inset #444;
+}
+
+/*Animacion del formulario*/
+
+#btn:checked ~ #form{
+    /* opacity: 1;
+    visibility: visible; */
+    transform: translateX(0%);
+    transition: all 3ss ease;
+}
+#btn{
+    display: none;
+}
+
+#form #exit {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 25px;
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    cursor: pointer;
+    transition: all 300ms;
+}
+#form #exit:hover{
+    transform: scale(1.2);
+    text-shadow: 5px 5px 5px #555;
+    transition: all 300ms;
+    color: #5DADE2;
+}
